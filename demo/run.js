@@ -2,6 +2,7 @@
  * Created by chetanv on 31/01/16.
  */
 
+import "babel-polyfill";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Demo from './Demo';

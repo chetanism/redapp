@@ -3,8 +3,7 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-
-import HelloWorld from '../src/HelloWorld';
+import MyApp from './apps/MainApp/MainApp'
 
 class Demo extends Component {
 
@@ -12,24 +11,7 @@ class Demo extends Component {
   static defaultProps = {};
 
   render() {
-    return (
-      <div>
-        <section>
-          <h1>HelloWorld</h1>
-          <ul>
-            <li>
-              <h2>Default</h2>
-              <HelloWorld />
-            </li>
-
-            <li>
-              <h2>Name</h2>
-              <HelloWorld name="John Doe" />
-            </li>
-          </ul>
-        </section>
-      </div>
-    );
+    return <MyApp.RenderApp />;
   }
 }
 
